@@ -518,20 +518,21 @@ ul li::before {
 
 .flex-nav2 {
   background: getColor(theGray);
-  padding-top: 0vw;
+  display: flex;
+  flex-direction: row; // <default;> // and -reverse;
+  height: 4vw;
+
   margin-top: 0vw;
   padding-left: 3vw;
   padding-right: 3vw;
-  display: flex;
-  flex-direction: row; // <default;> // and -reverse;
-  height: 3vw;
+  padding-top: .5vw;
   text-transform: uppercase;
 
   &__flex-box {
     align-items: center;
     display: flex;
-    justify-content: center;
     flex-grow: 1.5;
+    justify-content: center;
     transition: transform .3s;
   }
 
