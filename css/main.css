@@ -34,7 +34,7 @@ li,
 }
 
 body {
-  font-family: 'Overpass';
+  font-family: "Overpass";
   overflow-x: hidden;
 }
 
@@ -96,7 +96,7 @@ body {
   -webkit-animation: rotation 42s infinite linear;
           animation: rotation 42s infinite linear;
   position: absolute;
-  Left: 70vw;
+  left: 70vw;
   width: 15vw;
 }
 
@@ -218,7 +218,7 @@ li,
 .h7,
 .h8,
 .h9 {
-  font-family: 'Overpass';
+  font-family: "Overpass";
   line-height: 1.5;
   margin: 0;
 }
@@ -255,7 +255,7 @@ h4 {
 h5 {
   font-size: 3.2vw;
   font-weight: 900;
-  letter-spacing: -.1vw;
+  letter-spacing: -0.1vw;
   line-height: 1.25;
 }
 
@@ -268,15 +268,15 @@ h6 {
   text-align: center;
   font-size: 6vw;
   font-weight: 800;
-  letter-spacing: -.2vw;
-  line-height: 1.0;
+  letter-spacing: -0.2vw;
+  line-height: 1;
 }
 
 .h8 {
   text-align: center;
   font-size: 3vw;
   font-weight: 500;
-  letter-spacing: -.1vw;
+  letter-spacing: -0.1vw;
   padding-top: 0vw;
   margin-bottom: 2vw;
 }
@@ -285,13 +285,13 @@ h6 {
   text-align: left;
   font-size: 2vw;
   font-weight: 300;
-  letter-spacing: -.05vw;
+  letter-spacing: -0.05vw;
   padding-top: 0vw;
   margin-bottom: 2vw;
 }
 
 br {
-  line-height: 1.0vw;
+  line-height: 1vw;
 }
 
 .bold {
@@ -371,7 +371,7 @@ ol li::before {
   content: counter(counter-one);
   font-size: 3vw;
   font-weight: 900;
-  line-height: .8;
+  line-height: 0.8;
   position: absolute;
   left: -2.5vw;
 }
@@ -396,7 +396,7 @@ ul li::before {
   content: "•";
   font-size: 3vw;
   font-weight: 900;
-  line-height: .8;
+  line-height: 0.8;
   position: absolute;
   left: -2.5vw;
 }
@@ -410,16 +410,17 @@ ul li::before {
 }
 
 .flex-header-container {
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 16.5vw;
-  width: 95vw;
-  padding-top: 1.5vw;
-  padding-left: 2vw;
-  color: white;
-  position: relative;
   overflow: hidden;
+  padding-left: 4vw;
+  padding-right: 0vw;
+  padding-top: 1.5vw;
+  position: relative;
+  width: 95vw;
 }
 
 .flex-header-container__box {
@@ -433,10 +434,10 @@ ul li::before {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
 .flex-header-container__box-1 {
@@ -510,7 +511,7 @@ ul li::before {
   margin-top: 0vw;
   padding-left: 3vw;
   padding-right: 3vw;
-  padding-top: .5vw;
+  padding-top: 0.5vw;
   text-transform: uppercase;
 }
 
@@ -527,10 +528,10 @@ ul li::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .flex-nav2__flex-box:hover {
@@ -564,10 +565,10 @@ ul li::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .flex-hero__flex-box--1 {
@@ -635,7 +636,7 @@ ul li::before {
   -webkit-animation: 20s sliderAnimation infinite;
           animation: 20s sliderAnimation infinite;
   font-size: 0;
-  Left: 0;
+  left: 0;
   margin: 0;
   position: relative;
   text-align: left;
@@ -648,61 +649,61 @@ figure img {
 
 @-webkit-keyframes sliderAnimation {
   0% {
-    Left: 0;
+    left: 0;
   }
   20% {
-    Left: 0;
+    left: 0;
   }
   25% {
-    Left: -100%;
+    left: -100%;
   }
   45% {
-    Left: -100%;
+    left: -100%;
   }
   50% {
-    Left: -200%;
+    left: -200%;
   }
   70% {
-    Left: -200%;
+    left: -200%;
   }
   75% {
-    Left: -300%;
+    left: -300%;
   }
   95% {
-    Left: -300%;
+    left: -300%;
   }
   100% {
-    Left: -400%;
+    left: -400%;
   }
 }
 
 @keyframes sliderAnimation {
   0% {
-    Left: 0;
+    left: 0;
   }
   20% {
-    Left: 0;
+    left: 0;
   }
   25% {
-    Left: -100%;
+    left: -100%;
   }
   45% {
-    Left: -100%;
+    left: -100%;
   }
   50% {
-    Left: -200%;
+    left: -200%;
   }
   70% {
-    Left: -200%;
+    left: -200%;
   }
   75% {
-    Left: -300%;
+    left: -300%;
   }
   95% {
-    Left: -300%;
+    left: -300%;
   }
   100% {
-    Left: -400%;
+    left: -400%;
   }
 }
 
@@ -716,11 +717,11 @@ a.button3 {
   display: inline-block;
   -webkit-filter: drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.5));
           filter: drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.5));
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
   font-size: 1.5vw;
   font-weight: 900;
   margin: 0 0.3em 0.3em 0;
-  padding: .5vw 1vw;
+  padding: 0.5vw 1vw;
   position: fixed;
   text-align: center;
   text-decoration: none;
@@ -784,6 +785,7 @@ a.button3:hover {
   margin-right: 1.5vw;
   padding-top: 2vw;
   text-align: center;
+  width: 42vw;
 }
 
 .flex-products__flex-box--1 img {
@@ -795,8 +797,8 @@ a.button3:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 0.33vw solid #980651;
   border-radius: 2vw 0 2vw 0;
+  border: 0.33vw solid #980651;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -810,7 +812,7 @@ a.button3:hover {
   margin-left: 1.5vw;
   margin-right: 1.5vw;
   text-align: center;
-  width: 33vw;
+  width: 42vw;
 }
 
 .flex-products__flex-box--2 img {
@@ -853,7 +855,7 @@ a.button3:hover {
   -webkit-animation: 12s sliderAnimation infinite;
           animation: 12s sliderAnimation infinite;
   font-size: 0;
-  Left: 0;
+  left: 0;
   margin-left: 2.75vw;
   margin-top: 2vw;
   position: relative;
@@ -863,28 +865,28 @@ a.button3:hover {
 
 @keyframes sliderAnimation {
   0% {
-    Left: 0;
+    left: 0;
   }
   18% {
-    Left: 0;
+    left: 0;
   }
   23% {
-    Left: -100%;
+    left: -100%;
   }
   48% {
-    Left: -100%;
+    left: -100%;
   }
   53% {
-    Left: -200%;
+    left: -200%;
   }
   72% {
-    Left: -200%;
+    left: -200%;
   }
   77% {
-    Left: -300%;
+    left: -300%;
   }
   100% {
-    Left: -300%;
+    left: -300%;
   }
 }
 
@@ -1098,7 +1100,7 @@ a.button3:hover {
   -webkit-column-gap: 3vw;
           column-gap: 3vw;
   height: 56vw;
-  margin: 3.0vw auto;
+  margin: 3vw auto;
   padding-top: 0vw;
   padding: 2vw;
   width: 90.5vw;
@@ -1107,7 +1109,7 @@ a.button3:hover {
 }
 
 .double-column-box {
-  margin: 0 0 6.0vw;
+  margin: 0 0 6vw;
   overflow: hidden;
   padding-top: 0vw;
   padding-bottom: 0vw;
@@ -1123,7 +1125,7 @@ a.button3:hover {
 }
 
 .double-column-box__main-story p {
-  text-indent: 2.0vw;
+  text-indent: 2vw;
 }
 
 .double-column-box img {
@@ -1141,7 +1143,7 @@ a.button3:hover {
 }
 
 .double-column-box-32 {
-  margin: 0 0 6.0vw;
+  margin: 0 0 6vw;
   overflow: hidden;
   padding-top: 0vw;
   padding-bottom: 0vw;
@@ -1157,7 +1159,7 @@ a.button3:hover {
 }
 
 .double-column-box-32__main-story p {
-  text-indent: 2.0vw;
+  text-indent: 2vw;
 }
 
 .double-column-box-32 img {
@@ -1177,9 +1179,9 @@ a.button3:hover {
 .mosaic-container {
   -webkit-columns: 2;
           columns: 2;
-  -webkit-column-gap: 3.0vw;
-          column-gap: 3.0vw;
-  margin: 3.0vw auto;
+  -webkit-column-gap: 3vw;
+          column-gap: 3vw;
+  margin: 3vw auto;
   width: 90.5vw;
 }
 
@@ -1187,9 +1189,9 @@ a.button3:hover {
   background: white;
   -webkit-column-break-inside: avoid;
           break-inside: avoid;
-  margin: 0 0 3.0vw;
+  margin: 0 0 3vw;
   overflow: hidden;
-  padding: 2.0vw;
+  padding: 2vw;
   width: 100%;
 }
 
@@ -1199,7 +1201,7 @@ a.button3:hover {
 }
 
 .mosaic-box__main-story p {
-  text-indent: 2.0vw;
+  text-indent: 2vw;
 }
 
 .mosaic-box img {
@@ -1210,9 +1212,9 @@ a.button3:hover {
 .mosaic-text-burst {
   -webkit-column-break-inside: avoid;
           break-inside: avoid;
-  margin: 0 0 3.0vw;
+  margin: 0 0 3vw;
   overflow: hidden;
-  padding: 2.0vw;
+  padding: 2vw;
   width: 100%;
 }
 
@@ -1220,9 +1222,9 @@ a.button3:hover {
   background: rgba(255, 255, 255, 0.8);
   -webkit-column-break-inside: avoid;
           break-inside: avoid;
-  margin: 0 0 3.0vw;
+  margin: 0 0 3vw;
   overflow: hidden;
-  padding: 2.0vw;
+  padding: 2vw;
   width: 100%;
 }
 
@@ -1319,7 +1321,7 @@ a.button3:hover {
       flex-wrap: wrap;
   height: 11vw;
   padding-bottom: 0vw;
-  padding-top: .5vw;
+  padding-top: 0.5vw;
   padding-left: 3vw;
   padding-right: 1vw;
 }
@@ -1329,9 +1331,9 @@ a.button3:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: .5;
-      -ms-flex-positive: .5;
-          flex-grow: .5;
+  -webkit-box-flex: 0.5;
+      -ms-flex-positive: 0.5;
+          flex-grow: 0.5;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1350,7 +1352,7 @@ a.button3:hover {
   color: white;
   font-weight: 800;
   height: 3vw;
-  padding-top: .25vw;
+  padding-top: 0.25vw;
   margin-right: 1.5vw;
   padding-left: 3vw;
   width: 48%;
@@ -1362,8 +1364,8 @@ a.button3:hover {
   color: white;
   font-weight: 800;
   height: 3vw;
-  padding-top: .25vw;
-  margin-top: .5vw;
+  padding-top: 0.25vw;
+  margin-top: 0.5vw;
   margin-right: 1.5vw;
   padding-left: 3vw;
   width: 48%;
@@ -1375,8 +1377,8 @@ a.button3:hover {
   color: white;
   font-weight: 800;
   height: 3vw;
-  padding-top: .25vw;
-  margin-top: .5vw;
+  padding-top: 0.25vw;
+  margin-top: 0.5vw;
   margin-right: 1.5vw;
   padding-left: 3vw;
   width: 48%;
@@ -1388,8 +1390,8 @@ a.button3:hover {
   color: white;
   font-weight: 800;
   height: 3vw;
-  padding-top: .25vw;
-  margin-top: .5vw;
+  padding-top: 0.25vw;
+  margin-top: 0.5vw;
   margin-right: 1.5vw;
   padding-left: 3vw;
   width: 48%;
@@ -1401,8 +1403,8 @@ a.button3:hover {
   color: white;
   font-weight: 800;
   height: 3vw;
-  padding-top: .25vw;
-  margin-top: .5vw;
+  padding-top: 0.25vw;
+  margin-top: 0.5vw;
   margin-right: 1.5vw;
   padding-left: 3vw;
   width: 48%;
@@ -1414,8 +1416,8 @@ a.button3:hover {
   color: white;
   font-weight: 800;
   height: 3vw;
-  padding-top: .25vw;
-  margin-top: .5vw;
+  padding-top: 0.25vw;
+  margin-top: 0.5vw;
   margin-right: 1.5vw;
   padding-left: 3vw;
   width: 48%;
@@ -1427,8 +1429,8 @@ a.button3:hover {
   color: white;
   font-weight: 800;
   height: 3vw;
-  padding-top: .25vw;
-  margin-top: .5vw;
+  padding-top: 0.25vw;
+  margin-top: 0.5vw;
   margin-right: 1.5vw;
   padding-left: 3vw;
   width: 48%;
@@ -1440,8 +1442,8 @@ a.button3:hover {
   color: white;
   font-weight: 800;
   height: 3vw;
-  padding-top: .25vw;
-  margin-top: .5vw;
+  padding-top: 0.25vw;
+  margin-top: 0.5vw;
   margin-right: 1.5vw;
   padding-left: 3vw;
   width: 48%;

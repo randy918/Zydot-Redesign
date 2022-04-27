@@ -1,23 +1,24 @@
 //!  121920.1518    /* Custom properties */
 
-$colors: (bg: rgba(55, 66, 76, 1),
+$colors: (
+  bg: rgba(55, 66, 76, 1),
   bitByBitBlonde: rgba(214, 227, 241, 1),
   bitByBitBlue: rgba(0, 79, 136, 1),
   bitByBitRed: rgba(240, 44, 80, 1),
-  theAqua: rgba(0, 178, 167, .8),
+  theAqua: rgba(0, 178, 167, 0.8),
   theBackground: rgba(229, 231, 239, 1),
   theBlue: rgba(0, 94, 199, 1),
   theBrown: rgba(69, 48, 22, 1),
   theDarkGray: rgba(43, 50, 56, 1),
-  theFade: rgba(255, 255, 255, .1),
-  theFadeWhite: rgba(255, 255, 255, .8),
+  theFade: rgba(255, 255, 255, 0.1),
+  theFadeWhite: rgba(255, 255, 255, 0.8),
   theGray: rgb(78, 92, 107),
   theGreen: rgba(0, 173, 43, 1),
   theLightBlue: rgba(185, 229, 251, 1),
   theOrange: rgba(255, 103, 0, 1),
   thePurple: rgb(152, 6, 81),
-  theRed: rgba(129, 19, 95, .8),
-  theVividRed: rgba(200, 0, 0, .5),
+  theRed: rgba(129, 19, 95, 0.8),
+  theVividRed: rgba(200, 0, 0, 0.5),
   theYellow: rgb(221, 172, 94),
 );
 
@@ -77,7 +78,7 @@ body {
   // background-size: cover;
   // height: 100%;
   // margin: 0;
-  font-family: 'Overpass';
+  font-family: "Overpass";
   overflow-x: hidden;
 }
 
@@ -102,10 +103,6 @@ body {
   100% {
     background-position: -2122px;
   }
-
-
-
-
 }
 
 .body-ultimate-blend {
@@ -126,7 +123,6 @@ body {
 
 //todo  121920.1726     general layout ends
 
-
 //&  10521.0845     TOP CHOP STICKS TWIRL
 .wrapper-wrapper {
   position: fixed;
@@ -140,7 +136,7 @@ body {
 .image-test {
   animation: rotation 42s infinite linear;
   position: absolute;
-  Left: 70vw;
+  left: 70vw;
   width: 15vw;
 }
 
@@ -183,8 +179,6 @@ body {
   }
 }
 
-
-
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -198,15 +192,15 @@ body {
 
 @keyframes animatedBackground {
   0% {
-    background-position: 0% 0%
+    background-position: 0% 0%;
   }
 
   50% {
-    background-position: 0% 100%
+    background-position: 0% 100%;
   }
 
   100% {
-    background-position: 0% 0%
+    background-position: 0% 0%;
   }
 }
 
@@ -222,7 +216,7 @@ li,
 .h7,
 .h8,
 .h9 {
-  font-family: 'Overpass';
+  font-family: "Overpass";
   line-height: 1.5;
   margin: 0;
 }
@@ -230,7 +224,7 @@ li,
 p {
   font-size: 2vw;
   font-weight: 300;
-  text-indent: 2.5vw
+  text-indent: 2.5vw;
 }
 
 h1 {
@@ -259,7 +253,7 @@ h4 {
 h5 {
   font-size: 3.2vw;
   font-weight: 900;
-  letter-spacing: -.1vw;
+  letter-spacing: -0.1vw;
   line-height: 1.25;
 }
 
@@ -272,15 +266,15 @@ h6 {
   text-align: center;
   font-size: 6vw;
   font-weight: 800;
-  letter-spacing: -.2vw;
-  line-height: 1.0;
+  letter-spacing: -0.2vw;
+  line-height: 1;
 }
 
 .h8 {
   text-align: center;
   font-size: 3vw;
   font-weight: 500;
-  letter-spacing: -.1vw;
+  letter-spacing: -0.1vw;
   padding-top: 0vw;
   margin-bottom: 2vw;
 }
@@ -289,7 +283,7 @@ h6 {
   text-align: left;
   font-size: 2vw;
   font-weight: 300;
-  letter-spacing: -.05vw;
+  letter-spacing: -0.05vw;
   padding-top: 0vw;
   margin-bottom: 2vw;
 }
@@ -298,7 +292,7 @@ h6 {
 
 //!  81220.1307     CHARACTER STYLES
 br {
-  line-height: 1.0vw;
+  line-height: 1vw;
 }
 
 .bold {
@@ -341,7 +335,7 @@ br {
 }
 
 #fixedbutton {
-  filter: drop-shadow(0px 0px 13px rgba(0, 0, 0, .5));
+  filter: drop-shadow(0px 0px 13px rgba(0, 0, 0, 0.5));
   position: fixed;
   left: 68vw;
   width: 10%;
@@ -360,7 +354,7 @@ br {
 
 //todo  121920.1725     character styles ends
 
-//!  81520.1823     INDENT LISTING STYLES 
+//!  81520.1823     INDENT LISTING STYLES
 ol {
   counter-reset: counter-one;
   list-style: none;
@@ -382,7 +376,7 @@ ol li::before {
   content: counter(counter-one);
   font-size: 3vw;
   font-weight: 900;
-  line-height: .8;
+  line-height: 0.8;
   position: absolute;
   // left: calc(-1 * var(--size) - 10px);
   left: -2.5vw;
@@ -408,13 +402,13 @@ ul li::before {
   content: "•";
   font-size: 3vw;
   font-weight: 900;
-  line-height: .8;
+  line-height: 0.8;
   position: absolute;
   // left: calc(-1 * var(--size) - 10px);
   left: -2.5vw;
 }
 
-//todo  121920.1724 indent listing style 
+//todo  121920.1724 indent listing style
 
 //^  121920.1814    HOME PAGE BEGINS
 
@@ -430,19 +424,16 @@ ul li::before {
 }
 
 .flex-header-container {
+  // margin-top: 1.5vw;
+  color: white;
   display: flex;
   height: 16.5vw;
-  width: 95vw;
-  // margin-top: 1.5vw;
-  padding-top: 1.5vw;
-  padding-left: 2vw;
-  color: white;
-  position: relative;
   overflow: hidden;
-
-
-
-
+  padding-left: 4vw;
+  padding-right: 0vw;
+  padding-top: 1.5vw;
+  position: relative;
+  width: 95vw;
 
   &__box {
     background-position: center;
@@ -451,7 +442,7 @@ ul li::before {
     justify-content: center;
     align-items: center;
     color: white;
-    transition: transform .2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
   }
 
   &__box-1 {
@@ -463,10 +454,8 @@ ul li::before {
   &__box-1:hover,
   &__box-2:hover,
   &__box-3:hover,
-  &__box-4:hover,
-    {
+  &__box-4:hover {
     transform: scale(1.1);
-
   }
 
   &__box-2 {
@@ -481,8 +470,6 @@ ul li::before {
     background-image: url(/images/12-20-20.1004-UC-ultra-clean-top-nav-logo.png);
     width: 23%;
   }
-
-
 
   &__box-4 {
     display: flex;
@@ -506,14 +493,12 @@ ul li::before {
 //!  6-27-20.1535      Nav2 words begins
 
 .flex-nav2__container {
-
   overflow: hidden;
   position: fixed;
   top: 16vw;
   right: 0;
   left: 0;
   z-index: 200;
-
 }
 
 .flex-nav2 {
@@ -525,7 +510,7 @@ ul li::before {
   margin-top: 0vw;
   padding-left: 3vw;
   padding-right: 3vw;
-  padding-top: .5vw;
+  padding-top: 0.5vw;
   text-transform: uppercase;
 
   &__flex-box {
@@ -533,7 +518,7 @@ ul li::before {
     display: flex;
     flex-grow: 1.5;
     justify-content: center;
-    transition: transform .3s;
+    transition: transform 0.3s;
   }
 
   &__flex-box:hover {
@@ -556,7 +541,7 @@ ul li::before {
     display: flex;
     justify-content: center;
     //  flex-grow: 1.5;
-    transition: transform .3s;
+    transition: transform 0.3s;
   }
 
   &__flex-box--1 {
@@ -585,16 +570,12 @@ ul li::before {
     &__flex-box--2 .star-twirl {
       content: url("/images/12-20-20.0959-chopsticks-150x.png");
       width: 25vw;
-
-
-
     }
   }
 
   &__flex-box--2 h4 {
     margin-bottom: 0vw;
     margin-top: -3vw;
-
   }
 }
 
@@ -613,7 +594,7 @@ ul li::before {
 #slider figure {
   animation: 20s sliderAnimation infinite;
   font-size: 0;
-  Left: 0;
+  left: 0;
   margin: 0;
   position: relative;
   text-align: left;
@@ -626,62 +607,67 @@ figure img {
 
 @keyframes sliderAnimation {
   0% {
-    Left: 0;
+    left: 0;
   }
 
   20% {
-    Left: 0;
+    left: 0;
   }
 
   25% {
-    Left: -100%;
+    left: -100%;
   }
 
   45% {
-    Left: -100%;
+    left: -100%;
   }
 
   50% {
-    Left: -200%;
+    left: -200%;
   }
 
   70% {
-    Left: -200%;
+    left: -200%;
   }
 
   75% {
-    Left: -300%;
+    left: -300%;
   }
 
   95% {
-    Left: -300%;
+    left: -300%;
   }
 
   100% {
-    Left: -400%;
+    left: -400%;
   }
 }
 
 //todo  121920.1746     flex hero slider ends
 
 //!  121920.1933    30 OFF BEGINS 30off
-.30off h4 {}
+.30off h4 {
+}
 
 //todo  121920.1933     30off ends
 
 //!  121920.1715    BUTTON BEGINS
 a.button3 {
-  background: linear-gradient(180deg, rgba(250, 112, 67, 1) 41%, rgba(233, 40, 104, 1) 57%);
+  background: linear-gradient(
+    180deg,
+    rgba(250, 112, 67, 1) 41%,
+    rgba(233, 40, 104, 1) 57%
+  );
   border-radius: 2vw;
   box-sizing: border-box;
   color: black;
   display: inline-block;
-  filter: drop-shadow(0px 0px 9px rgba(0, 0, 0, .5));
-  font-family: 'Overpass', sans-serif;
+  filter: drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.5));
+  font-family: "Overpass", sans-serif;
   font-size: 1.5vw;
   font-weight: 900;
   margin: 0 0.3em 0.3em 0;
-  padding: .5vw 1vw;
+  padding: 0.5vw 1vw;
   position: fixed;
   text-align: center;
   text-decoration: none;
@@ -698,7 +684,11 @@ a.button3:hover {
   left: 70.75vw;
   font-size: 2vw;
   color: white;
-  background: linear-gradient(180deg, rgba(28, 131, 236, 1) 41%, rgba(90, 53, 255, 1) 57%);
+  background: linear-gradient(
+    180deg,
+    rgba(28, 131, 236, 1) 41%,
+    rgba(90, 53, 255, 1) 57%
+  );
 }
 
 //todo  121920.1729     order here button ends
@@ -715,13 +705,12 @@ a.button3:hover {
   &__flex-box {
     min-width: 27vw;
     overflow: hidden;
-
   }
 
   //*  121920.1819    FLEX BOX 1
   &__flex-box--1 {
     align-items: center;
-    border: .33vw solid getColor(thePurple);
+    border: 0.33vw solid getColor(thePurple);
     border-radius: 2vw 0 2vw 0;
     display: flex;
     flex-direction: column;
@@ -730,6 +719,7 @@ a.button3:hover {
     margin-right: 1.5vw;
     padding-top: 2vw;
     text-align: center;
+    width: 42vw;
   }
 
   &__flex-box--1 img {
@@ -740,15 +730,15 @@ a.button3:hover {
   //*  121920.1820    FLEX BOX 2
   &__flex-box--2 {
     align-items: center;
-    border: .33vw solid getColor(thePurple);
     border-radius: 2vw 0 2vw 0;
+    border: 0.33vw solid getColor(thePurple);
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
     text-align: center;
-    width: 33vw;
+    width: 42vw;
   }
 
   &__flex-box--2 img {
@@ -761,7 +751,7 @@ a.button3:hover {
   //*  121920.1820    FLEX BOX 3
   &__flex-box--3 {
     align-items: center;
-    border: .33vw solid getColor(thePurple);
+    border: 0.33vw solid getColor(thePurple);
     border-radius: 2vw 0 2vw 0;
     display: flex;
     flex-direction: column;
@@ -785,7 +775,7 @@ a.button3:hover {
 #miniSliderNew figure {
   animation: 12s sliderAnimation infinite;
   font-size: 0;
-  Left: 0;
+  left: 0;
   margin-left: 2.75vw;
   margin-top: 2vw;
 
@@ -794,39 +784,38 @@ a.button3:hover {
   width: 400%;
 }
 
-//!  120720.1848   
+//!  120720.1848
 @keyframes sliderAnimation {
   0% {
-    Left: 0;
+    left: 0;
   }
 
   18% {
-    Left: 0;
+    left: 0;
   }
 
   23% {
-    Left: -100%;
+    left: -100%;
   }
 
   48% {
-    Left: -100%;
+    left: -100%;
   }
 
   53% {
-    Left: -200%;
-    ;
+    left: -200%;
   }
 
   72% {
-    Left: -200%;
+    left: -200%;
   }
 
   77% {
-    Left: -300%;
+    left: -300%;
   }
 
   100% {
-    Left: -300%;
+    left: -300%;
   }
 }
 
@@ -848,9 +837,7 @@ a.button3:hover {
 
   // background: getColor(bitByBitRed);
   &__grid-box {
-
     // height: 11vw;
-
   }
 
   &__grid-box--1 {
@@ -859,7 +846,6 @@ a.button3:hover {
     // grid-row: 1 / 2;
     // width: 22vw;
     // grid-area: overlap;
-
   }
 
   &__grid-box--2 {
@@ -868,7 +854,6 @@ a.button3:hover {
     // grid-row: 1 / 2;
     // width: 22vw;
     // grid-area: overlap;
-
   }
 
   &__grid-box--3 {
@@ -877,7 +862,6 @@ a.button3:hover {
     // grid-row: 1 / 2;
     // width: 22vw;
     // grid-area: overlap;
-
   }
 
   &__grid-box--4 {
@@ -886,34 +870,24 @@ a.button3:hover {
     grid-row: 1 / 2;
     // width: 22vw;
     // grid-area: overlap;
-
   }
-
 }
 
-;
-
-
 .grid-header {
-
   display: grid;
   grid-template-column: 1fr;
   grid-template-rows: 1fr;
   // grid-template-areas: overlap;
 
   &__grid-box {
-
     // grid-area: overlap;
     height: 11vw;
-
   }
 
   &__grid-box--1 {
-
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     // grid-area: overlap;
-
   }
 
   &__grid-box--2 {
@@ -927,7 +901,6 @@ a.button3:hover {
     grid-row: 1 / 2;
     // grid-area: overlap;
   }
-
 }
 
 .flex-nav-under {
@@ -994,7 +967,6 @@ a.button3:hover {
     flex-grow: 1;
     justify-content: center;
     margin-bottom: 1.5vw;
-
   }
 
   &__flex-box--4 {
@@ -1009,50 +981,32 @@ a.button3:hover {
     flex-grow: 1;
     justify-content: center;
     margin-bottom: 6.5vw;
-
   }
-
-
-
 }
 
 // end flex-nav
 
-
-
-
-
-
-
 // end flex-hero
-
-
-
-
-
-
-
 
 //!  81620.1400     DOUBLE COLUMN BOX BEGINS
 
 .double-column-container {
-  background: rgba(255, 255, 255, .1);
+  background: rgba(255, 255, 255, 0.1);
   columns: 2;
   column-gap: 3vw;
   height: 56vw;
-  margin: 3.0vw auto;
+  margin: 3vw auto;
   padding-top: 0vw;
   padding: 2vw;
   width: 90.5vw;
   -webkit-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
-
 }
 
 .double-column-box {
   // background: white;
   // break-inside: avoid;
-  margin: 0 0 6.0vw;
+  margin: 0 0 6vw;
   overflow: hidden;
   padding-top: 0vw;
   padding-bottom: 0vw;
@@ -1062,13 +1016,12 @@ a.button3:hover {
   width: 100%;
   position: relative;
 
-
   &__main-story {
     color: white;
   }
 
   &__main-story p {
-    text-indent: 2.0vw;
+    text-indent: 2vw;
   }
 }
 
@@ -1086,15 +1039,13 @@ a.button3:hover {
 }
 
 .double-column-box p {
-
   text-align: left;
-
 }
 
 .double-column-box-32 {
   // background: white;
   // break-inside: avoid;
-  margin: 0 0 6.0vw;
+  margin: 0 0 6vw;
   overflow: hidden;
   padding-top: 0vw;
   padding-bottom: 0vw;
@@ -1104,13 +1055,12 @@ a.button3:hover {
   width: 100%;
   position: relative;
 
-
   &__main-story {
     color: white;
   }
 
   &__main-story p {
-    text-indent: 2.0vw;
+    text-indent: 2vw;
   }
 }
 
@@ -1128,42 +1078,35 @@ a.button3:hover {
 }
 
 .double-column-box-32 p {
-
   text-align: left;
-
 }
 
 //!  81620.1400     DOUBLE WIDE BOX ENDS
-
-
-
-
 
 //!  81120.0806     STORY BOXES!
 
 .mosaic-container {
   columns: 2;
-  column-gap: 3.0vw;
-  margin: 3.0vw auto;
+  column-gap: 3vw;
+  margin: 3vw auto;
   width: 90.5vw;
 }
 
 .mosaic-box {
   background: white;
   break-inside: avoid;
-  margin: 0 0 3.0vw;
+  margin: 0 0 3vw;
   overflow: hidden;
-  padding: 2.0vw;
+  padding: 2vw;
   width: 100%;
-
 
   &__main-story {
     color: white;
-    background: rgba(255, 255, 255, .1);
+    background: rgba(255, 255, 255, 0.1);
   }
 
   &__main-story p {
-    text-indent: 2.0vw;
+    text-indent: 2vw;
   }
 }
 
@@ -1175,23 +1118,21 @@ a.button3:hover {
 .mosaic-text-burst {
   // background: rgba (0, 0, 0, 0);
   break-inside: avoid;
-  margin: 0 0 3.0vw;
+  margin: 0 0 3vw;
   overflow: hidden;
-  padding: 2.0vw;
+  padding: 2vw;
   width: 100%;
 }
-
 
 //!  81520.0820     BULLET BOX
 
 .mosaic-message-box {
   background: getColor(theFadeWhite);
   break-inside: avoid;
-  margin: 0 0 3.0vw;
+  margin: 0 0 3vw;
   overflow: hidden;
-  padding: 2.0vw;
+  padding: 2vw;
   width: 100%;
-
 
   &__main-story {
     // color: white;
@@ -1205,14 +1146,12 @@ a.button3:hover {
 }
 
 .mosaic-box img {
-
   // max-width: 100%;
   // min-width: 100%;
 }
 
 .flex-main-ultimate-blend {
   display: grid;
-
 
   //!  81120.0831     STORY BOXES END
   // flex-direction: row;
@@ -1267,32 +1206,24 @@ a.button3:hover {
   // }
 }
 
-
-
 // end flex-products
 
 .miniflex {
   width: 24vw;
   margin-left: 0vw;
   margin-right: 5vw;
-
 }
-
-
 
 .flex-footer {
   display: flex;
   flex-direction: column;
   height: 31vw;
 
-
-
   &__flex-box {
     flex-grow: 1;
     margin-left: 3vw;
     margin-right: 3.5vw;
     // display: grid;
-
   }
 
   &__flex-box--1 {
@@ -1305,10 +1236,6 @@ a.button3:hover {
     justify-content: space-between;
     padding-right: 3vw;
     padding-left: 3vw;
-
-
-
-
   }
 
   &__flex-box--1--1a {
@@ -1319,8 +1246,6 @@ a.button3:hover {
     font-weight: 800;
     margin-right: 1.5vw;
     padding-left: 3vw;
-
-
   }
 
   &__flex-box--1--2a {
@@ -1331,26 +1256,25 @@ a.button3:hover {
     font-weight: 800;
     padding-left: 3vw;
     margin-left: 1.5vw;
-
   }
 
   &__flex-box--2 {
     align-items: center;
-    background: rgba(80, 6, 40, .9);
+    background: rgba(80, 6, 40, 0.9);
     column-count: 2;
     flex-direction: column;
     flex-wrap: wrap;
     height: 11vw;
     padding-bottom: 0vw;
-    padding-top: .5vw;
+    padding-top: 0.5vw;
     padding-left: 3vw;
     padding-right: 1vw;
   }
 
   &__flex-box--3 {
-    background: rgba(80, 6, 40, .9);
+    background: rgba(80, 6, 40, 0.9);
     display: flex;
-    flex-grow: .5;
+    flex-grow: 0.5;
     text-align: center;
     justify-content: center;
     padding-top: 2vw;
@@ -1368,7 +1292,7 @@ a.button3:hover {
   color: white;
   font-weight: 800;
   height: 3vw;
-  padding-top: .25vw;
+  padding-top: 0.25vw;
   margin-right: 1.5vw;
   padding-left: 3vw;
   width: 48%;
@@ -1380,8 +1304,8 @@ a.button3:hover {
   color: white;
   font-weight: 800;
   height: 3vw;
-  padding-top: .25vw;
-  margin-top: .5vw;
+  padding-top: 0.25vw;
+  margin-top: 0.5vw;
   margin-right: 1.5vw;
   padding-left: 3vw;
   width: 48%;
@@ -1393,8 +1317,8 @@ a.button3:hover {
   color: white;
   font-weight: 800;
   height: 3vw;
-  padding-top: .25vw;
-  margin-top: .5vw;
+  padding-top: 0.25vw;
+  margin-top: 0.5vw;
   margin-right: 1.5vw;
   padding-left: 3vw;
   width: 48%;
@@ -1406,8 +1330,8 @@ a.button3:hover {
   color: white;
   font-weight: 800;
   height: 3vw;
-  padding-top: .25vw;
-  margin-top: .5vw;
+  padding-top: 0.25vw;
+  margin-top: 0.5vw;
   margin-right: 1.5vw;
   padding-left: 3vw;
   width: 48%;
@@ -1419,8 +1343,8 @@ a.button3:hover {
   color: white;
   font-weight: 800;
   height: 3vw;
-  padding-top: .25vw;
-  margin-top: .5vw;
+  padding-top: 0.25vw;
+  margin-top: 0.5vw;
   margin-right: 1.5vw;
   padding-left: 3vw;
   width: 48%;
@@ -1432,8 +1356,8 @@ a.button3:hover {
   color: white;
   font-weight: 800;
   height: 3vw;
-  padding-top: .25vw;
-  margin-top: .5vw;
+  padding-top: 0.25vw;
+  margin-top: 0.5vw;
   margin-right: 1.5vw;
   padding-left: 3vw;
   width: 48%;
@@ -1445,8 +1369,8 @@ a.button3:hover {
   color: white;
   font-weight: 800;
   height: 3vw;
-  padding-top: .25vw;
-  margin-top: .5vw;
+  padding-top: 0.25vw;
+  margin-top: 0.5vw;
   margin-right: 1.5vw;
   padding-left: 3vw;
   width: 48%;
@@ -1458,8 +1382,8 @@ a.button3:hover {
   color: white;
   font-weight: 800;
   height: 3vw;
-  padding-top: .25vw;
-  margin-top: .5vw;
+  padding-top: 0.25vw;
+  margin-top: 0.5vw;
   margin-right: 1.5vw;
   padding-left: 3vw;
   width: 48%;
@@ -1489,19 +1413,13 @@ a.button3:hover {
   width: 100%;
   // height: 2.5rem;
   /* Footer height */
-
 }
-
-
 
 //!  62720.1019     New Area Ends
 
 //!  41820.1904     Kevin Challenge #3
 
-
-
-@media (max-width: 800px) {}
-
-
+@media (max-width: 800px) {
+}
 
 //!  41820.1904     Kevin Challenge end
